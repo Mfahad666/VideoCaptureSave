@@ -33,6 +33,7 @@ namespace VideoCaptureSave
             label2.Visible = false;
             imageNameTextBox.Visible = false;
             CaptureDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+
             foreach (FilterInfo Device in CaptureDevices)
             {
                 comboBox1.Items.Add(Device.Name);
